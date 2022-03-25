@@ -1,0 +1,11 @@
+body {
+  background-color: antiquewhite;
+}
+
+.notFound h1 {
+  padding-top: 5rem;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

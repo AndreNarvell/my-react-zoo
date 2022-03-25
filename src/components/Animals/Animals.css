@@ -1,0 +1,59 @@
+.main {
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.animalDiv {
+  border-radius: 10px;
+  background-color: rgb(251, 212, 164);
+  margin: 1rem;
+  flex: 0 1 calc(20% - 3em);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+
+  transition: 0.4s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.4s box-shadow,
+    0.4s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.animalDiv:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.animalDiv img {
+  width: 230px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center middle;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.animalDiv a {
+  padding-top: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.animalDiv a:hover {
+  text-decoration: underline;
+}
+
+.animalText {
+  margin: 1rem;
+}
+
+.loadingDiv {
+  align-items: center;
+
+  height: 100vh;
+  margin: auto;
+  font-size: 5rem;
+}
+
+.loadingDiv svg {
+  height: 300px !important;
+  width: 300px !important;
+}

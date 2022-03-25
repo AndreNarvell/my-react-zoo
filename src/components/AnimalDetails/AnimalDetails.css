@@ -1,0 +1,95 @@
+.animalPage {
+  height: 100vh;
+}
+
+.animalPage img {
+  width: 40rem;
+  height: 20rem;
+  object-position: 50% 25%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.animalDetails p {
+  margin: auto;
+  width: 50vw;
+}
+
+.animalFeed {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  background-color: rgb(255, 190, 110);
+
+  padding: 0.5rem;
+  /* margin-top: 2rem; */
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 20vw;
+  margin: 2rem auto auto auto;
+}
+
+.animalFeed button {
+  margin: 1rem;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 2rem;
+  width: 5rem;
+  background-color: #ffffff;
+  border: 1px solid;
+}
+
+.animalFeed button span {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.animalFeed button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}
+
+button:disabled,
+button[disabled]:hover {
+  animation: none;
+}
+
+.linkBack {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.linkBack:hover {
+  text-decoration: underline;
+}
